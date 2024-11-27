@@ -56,4 +56,9 @@ class HomeController extends Controller
     {
         return view('quote');
     }
+
+    function contact()
+    {
+        return view('contact');
+    }
 }

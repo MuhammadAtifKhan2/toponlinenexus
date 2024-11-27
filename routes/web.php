@@ -4,12 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
 
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-
 Route::get('/',[HomeController::class,'index']);
 Route::get('about-us',[HomeController::class,'aboutUs']);
 Route::get('services',[HomeController::class,'services']);
@@ -20,3 +14,4 @@ Route::get('feature',[HomeController::class,'feature']);
 Route::get('team-members',[HomeController::class,'teamMembers']);
 Route::get('testimonials',[HomeController::class,'testimonials']);
 Route::get('quote',[HomeController::class,'quote']);
+Route::get('contact',[HomeController::class,'contact']);
